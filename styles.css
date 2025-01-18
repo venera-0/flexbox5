@@ -4,154 +4,80 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: Arial, sans-serif;
-    color: #f9f9fc;
     background-color: #000;
-    line-height: 1.6;
-}
-
-/* CRV Stakers Section */
-.crv-stakers {
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.crv-stakers .content {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.crv-stakers h1 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.crv-stakers p {
-    margin: 10px 0;
-    color: #ccc;
-}
-
-.crv-stakers ul {
-    list-style: none;
-}
-
-.crv-stakers li {
-    margin: 10px 0;
-    padding-left: 20px;
-    position: relative;
-    color: #aaa;
-}
-
-.crv-stakers li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #00ff85;
-}
-
-.crv-stakers .image img {
-    width: 400px;
-    height: auto;
-}
-
-/* Testimonials Section */
-.testimonials {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background: #161616;
-}
-
-.testimonial-box, .form-box {
-    flex: 1;
-    margin: 0 20px;
-}
-
-.testimonial-box h2, .form-box h2 {
-    color: #00ff85;
-}
-
-.testimonial {
-    background: #222;
-    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .card {
+    background-color: #181818;
+    padding: 30px;
     border-radius: 10px;
-    margin-top: 20px;
-}
-
-.testimonial .quote {
-    font-size: 20px;
-    font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 3em;
     margin-bottom: 10px;
-}
-
-.testimonial .rating {
-    color: #ffc107;
-    margin-top: 10px;
-}
-
-.form-box form {
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .content {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-box input, .form-box textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    background: #161616;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .item {
+    width: 50%;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .button {
+    background-color: #4CAF50;
     color: #fff;
-    border-radius: 5px;
-}
-
-.form-box button {
-    background: #00ff85;
-    color: #000;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Support Section */
-.support {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .footer {
     text-align: center;
-    background: #222;
-    padding: 20px;
-    color: #fff;
-}
-
-.support h2 {
-    color: #00ff85;
-    margin-bottom: 10px;
-}
-
-/* Footer Section */
-.footer {
-    background: #000;
-    padding: 20px;
-    text-align: center;
-    color: #ccc;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.footer-links h3 {
-    margin-bottom: 10px;
-    color: #00ff85;
-}
-
-.footer-links a {
-    display: block;
-    margin: 5px 0;
-    color: #aaa;
-    text-decoration: none;
 }
