@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f9f9fc;
+    background-color: #000000;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #000000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff85;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.wallet-btn {
+    background-color: #00ff85;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-buttons button {
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #00ff85;
+    color: black;
+}
+
+.btn-secondary {
+    background: white;
+    color: black;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #161616;
+}
+
+.stat-item h3 {
+    color: #00ff85;
+    font-size: 24px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.feature-content h2 {
+    color: #00ff85;
+}
+
+/* Process Section */
+.process {
+    text-align: center;
+    background: #161616;
+    color: white;
+    padding: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #000000;
+    color: #b3b3b3;
+    padding: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
