@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background-color: #000;
+    background: #040405;
 }
 
 /* Header */
@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #161616;
+    background: #040405;
 }
 
 .logo {
@@ -52,7 +52,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    background: linear-gradient(90deg, #1a1a1a, #161616);
+    background: #040405;
 }
 
 .banner-text {
@@ -76,23 +76,21 @@ body {
 }
 
 .btn-green {
-    background-color: #00ff85;
-    color: #000;
+    border-radius: 24px;
+    background: #00FF1A;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #000;
+    border-radius: 24px;
+    border: 1px solid #00FF1A;
+    color: #FFF;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     font-weight: bold;
-    cursor: pointer;
+   
 }
 
 .banner-image img {
@@ -102,17 +100,20 @@ body {
 
 /* Stats Section */
 .stats {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    background-color: #222;
+    display: inline-flex;
+    padding-top: 24px;
+    align-items: flex-start;
     text-align: center;
+    gap: 40px;
+    border-top: 1px solid #00FF1A;
+
 }
 
-.stat h3 {
-    font-size: 28px;
-    color: #00ff85;
-    margin-bottom: 10px;
+.stat span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
 }
 
 .stat p {
@@ -125,7 +126,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: #161616;
+    background: #040405;
+    stroke-width: 2px;
+    stroke: #00FF1A;
 }
 
 .boost-info {
@@ -167,28 +170,69 @@ body {
 
 /* Process Section */
 .steps-section {
-    text-align: center;
-    padding: 40px;
-    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    align-self: stretch;
+    background: #040405;
+    justify-content: center;
 }
 
 .steps-section h2 {
     margin-bottom: 30px;
+    justify-content: center;
+   
 }
+
+.step p {
+    color: #7A7A7A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+
+}
+
+
 
 .step-list {
     display: flex;
     justify-content: space-around;
 }
 
-.step {
-    text-align: center;
-}
 
 .step img {
-    max-width: 100px;
-    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    justify-content: center;
+
 }
+
+
+.border {
+    display: flex;
+    height: 56px;
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #00FF1A;
+    background: rgba(0, 255, 26, 0.10);
+    text-align: center;
+    justify-content: center;
+
+}
+
+.step {
+    text-align: center;
+
+}
+
 
 /* CRV Stakers Section */
 .crv-stakers {
@@ -196,7 +240,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background: linear-gradient(90deg, #161616, #1a1a1a);
+    background: #040405;
 }
 
 .crv-stakers .content {
@@ -214,20 +258,43 @@ body {
 }
 
 .crv-stakers ul {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
 .crv-stakers li {
-    margin-bottom: 10px;
-    color: #aaa;
-    display: flex;
-    align-items: center;
+    color: #7A7A7A;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    
 }
 
-.crv-stakers li strong {
-    color: #fff;
+.crv-stakers li span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    
+
 }
+
+
+.list-1 {
+    padding: 0px 16px 24px 16px;
+    border-left: 2px solid #00FF1A;
+}
+
+
+.list-2 {
+    border-left: 2px solid #4A4A4E;
+    padding: 0px 16px 24px 16px;
+}
+
+
 
 .crv-stakers .image img {
     max-width: 400px;
@@ -239,32 +306,66 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    background-color: #222;
+    
+
 }
 
-.testimonial-box, .form-box {
-    max-width: 500px;
-}
 
-.testimonial-box h2, .form-box h2 {
-    color: #00ff85;
-    margin-bottom: 20px;
-}
-
-.testimonial {
-    background: #161616;
-    padding: 20px;
-    border-radius: 10px;
+.testimonial span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+     
 }
 
 .testimonial p {
-    margin-bottom: 10px;
+    color: #7A7A7A;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+
 }
 
-.form-box form {
+
+.testimonial strong {
+    color: #7A7A7A;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 5px;
+
+}
+
+.green-line span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+
+   
+}
+
+
+
+.testimonial {
+    background: #1C1C20;
+    margin-top: 35px;
+    margin-right: 35px;
+    padding: 24px 32px;
+
+}
+
+
+.form-box {
     display: flex;
+    padding: 24px 32px;
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #1C1C20;
+  
+
 }
 
 .form-box input, .form-box textarea {
