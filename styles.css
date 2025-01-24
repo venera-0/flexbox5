@@ -343,8 +343,7 @@ body {
     font-size: 16px;
     font-style: normal;
     display: flex;
-    align-items: center;
-    gap: 12px;
+  
    
 }
 
@@ -398,13 +397,18 @@ body {
     background: #1C1C20;
     width: 624px;
     position: relative;
-    bottom: 45px;
+    bottom: 30px;
     left: 55px;
 
 
 
 }
   
+
+.greenn-line {
+    width: 91px;
+    margin-bottom: 35px;
+}
 
 .support-box {
     display: flex;
